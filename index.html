@@ -3,38 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add-website wromo.net | Serverless Deploy Engine</title>
+    <title>Add Website | Serverless Deploy Engine</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body { background-color: #0b0f1a; color: white; font-family: 'DM Sans', sans-serif; }
         .gradient-text { background: linear-gradient(135deg, #6366f1, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .step-card { transition: transform 0.3s ease; }
+        .step-card:hover { transform: translateY(-5px); }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen">
-    <div class="max-w-3xl text-center px-6">
+<body class="py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
         <div class="inline-block p-3 rounded-2xl bg-indigo-500/10 mb-6 border border-indigo-500/20">
             <span class="gradient-text font-bold text-sm tracking-widest uppercase">System Status: Active</span>
         </div>
-        <h1 class="text-5xl font-extrabold mb-6">Central Node <br><span class="gradient-text">main.wromo.net</span></h1>
-        <p class="text-gray-400 text-lg mb-10 leading-relaxed">
+
+        <h1 class="text-6xl font-extrabold mb-6">Central Node <br><span class="gradient-text">main.wromo.net</span></h1>
+        <p class="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
             Serverless Website deploy: The central routing node for your e-commerce infrastructure.
 All static stores are orchestrated through this serverless gateway,
 ensuring ultra-fast deployments and security through Cloud Functions Actions.
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
-            <div class="p-4 rounded-xl bg-gray-900/50 border border-gray-800">
-                <h3 class="text-indigo-400 font-bold mb-1">Serverless</h3>
-                <p class="text-xs text-gray-500">Static websites: Zero backend hosting costs.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+            <div class="p-6 rounded-2xl bg-gray-900/50 border border-gray-800">
+                <div class="w-10 h-10 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                    <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Serverless</h3>
+                <p class="text-gray-500 text-sm">Static websites: Zero backend hosting costs.</p>
             </div>
-            <div class="p-4 rounded-xl bg-gray-900/50 border border-gray-800">
-                <h3 class="text-indigo-400 font-bold mb-1">Automated</h3>
-                <p class="text-xs text-gray-500">CI/CD via GitHub API 2026.</p>
+            <div class="p-6 rounded-2xl bg-gray-900/50 border border-gray-800">
+                <div class="w-10 h-10 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                    <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Automated</h3>
+                <p class="text-gray-500 text-sm">CI/CD via GitHub API 2026 & Google Cloud Functions & Bucket Storage.</p>
             </div>
-            <div class="p-4 rounded-xl bg-gray-900/50 border border-gray-800">
-                <h3 class="text-indigo-400 font-bold mb-1">Static Hosting</h3>
-                <p class="text-xs text-gray-500">Maximum speed through Global CDN.</p>
+            <div class="p-6 rounded-2xl bg-gray-900/50 border border-gray-800">
+                <div class="w-10 h-10 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                    <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Static Hosting</h3>
+                <p class="text-gray-500 text-sm">Maximum speed through Global CDN.</p>
+            </div>
+        </div>
+
+        <div class="text-left bg-gray-900/30 border border-gray-800 rounded-3xl p-10">
+            <h2 class="text-3xl font-bold mb-10 text-center">How to Deploy Your Store</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="step-card">
+                    <div class="text-indigo-500 font-bold text-4xl mb-4">01</div>
+                    <h4 class="font-bold text-lg mb-2">Secure Login</h4>
+                    <p class="text-gray-500 text-sm">Access the dashboard using the one-time PIN secured via email.</p>
+                </div>
+                <div class="step-card">
+                    <div class="text-indigo-500 font-bold text-4xl mb-4">02</div>
+                    <h4 class="font-bold text-lg mb-2">Setup Domain</h4>
+                    <p class="text-gray-500 text-sm">Enter your domain and choose the desired design Theme eCommerce & Blogs.</p>
+                </div>
+                <div class="step-card">
+                    <div class="text-indigo-500 font-bold text-4xl mb-4">03</div>
+                    <h4 class="font-bold text-lg mb-2">Deploy Now</h4>
+                    <p class="text-gray-500 text-sm">Click the Deploy button. Your website will be generated automatically.</p>
+                </div>
+                <div class="step-card">
+                    <div class="text-indigo-500 font-bold text-4xl mb-4">04</div>
+                    <h4 class="font-bold text-lg mb-2">DNS Config</h4>
+                    <p class="text-gray-500 text-sm">Click the (i) icon, copy the DNS records, set a CNAME record pointing to wromo.net in your domain's DNS settings.</p>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-10 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-4">Edit & Customize</h3>
+                        <ul class="space-y-3 text-gray-400">
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full mr-3"></span> Edit Website Preview</li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full mr-3"></span> Choose the store and click Edit</li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full mr-3"></span> Modify Text, Images or Products visually</li>
+                        </ul>
+                    </div>
+                    <a href="https://main.wromo.net" 
+                        class="inline-block bg-indigo-600 px-8 py-4 rounded-xl font-bold text-white hover:bg-indigo-500 transition duration-300 shadow-lg shadow-indigo-500/20">
+                        Start Deploying Today! 
+                     </a>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://phonoa.com/cookies/wromo-cookies.js"></script>
 </body>
 </html>
