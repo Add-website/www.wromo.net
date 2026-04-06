@@ -9,3 +9,6 @@ ensuring ultra-fast deployments and security through Cloud Functions Actions.
 
 ## Central Node
 [https://main.wromo.net](https://main.wromo.net/)
+
+
+<img width="1150" height="1255" alt="image" src="https://github.com/user-attachments/assets/220f7427-fd2f-44d3-9c7c-72bcb6cd54f0" />
